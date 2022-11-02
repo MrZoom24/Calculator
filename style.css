@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededed;
+    font-family: 'Roboto Mono', monospace;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: #ededed;
+    border-radius: 1rem;
+    box-shadow:  0.8rem 1rem 1rem #FF6E7F,
+                -0.8rem -1rem 1rem #BFE9FF;
+    width: 37rem ;
+    height: 60rem;
+    padding: 2rem 0;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 1rem 1.8rem;
+    margin: auto;
+    box-shadow: 0.2rem 0.3rem 1rem gray;
+    width: 80%;
+    height: 20%;
+    border-radius: 1rem;
+}
+
+.previous {
+    font-size: 2rem;
+    color: #6a808c;
+}
+
+.current {
+    font-size: 4rem;
+    color: #FF6E7F;
+}
+
+.delete-options {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 10rem;
+    box-shadow: 0.2rem 0.5rem 0.5rem gray;    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: ease 250ms;
+    user-select: none;
+}
+
+.clear-btn {
+    background-color: rgba(191, 233, 255, 0.5);
+}
+
+.clear-btn:hover {
+    background-color: rgb(191, 233, 255);
+}
+
+.delete:active {
+    box-shadow: 0.2rem 0.3rem 0.5rem gray;
+    transform: scale(0.95);
+}
+
+.delete-btn {
+    background-color: rgba(255, 110, 127, 0.5);
+}
+
+.delete-btn:hover {
+    background-color: rgb(255, 110, 127);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 36rem;
+    width: 80%;
+    margin: auto;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    box-shadow: 0.2rem 0.3rem 0.7rem gray;
+    cursor: pointer;
+    transition: ease 250ms;
+    user-select: none;
+}
+
+.button:active {
+    transform: scale(0.95);
+    box-shadow: 0.2rem 0.3rem 0.3rem gray;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primary {
+    background-color: rgba(191, 233, 255, 0.5);
+}
+
+.primary:hover {
+    background-color: rgb(191, 233, 255);
+}
+
+.secondary {
+    background-color: rgba(255, 110, 127, 0.5);
+}
+
+.secondary:hover {
+    background-color: rgb(255, 110, 127);
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.disabled:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+.disabled:active {
+    transform: scale(1);
+    box-shadow: 0.2rem 0.3rem 0.7rem gray;
+}
